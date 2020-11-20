@@ -1,0 +1,114 @@
+- !issue
+  id: 1
+  title: Figure out auto start apps in Android
+  complete: true
+  priority: 10
+  tags: ['']
+  created: 2012-01-21T15:00:00Z
+  due: null
+  notes: []
+- !issue
+  id: 2
+  title: Better handle issue when player given invalid url to play.
+  complete: false
+  priority: 0
+  tags: [bug]
+  created: 2012-02-27T15:00:00Z
+  due: 2012-03-05T15:00:00Z
+  notes: []
+- !issue
+  id: 3
+  title: If possible, show client connection, disconnect events as notifications.
+  complete: false
+  priority: 0
+  tags: [feature]
+  created: 2012-02-28T15:00:00Z
+  due: 2012-03-06T15:00:00Z
+  notes: []
+- !issue
+  id: 4
+  title: On new track, load stream from seperate thread than UPNP thread, for better performance.
+  complete: true
+  priority: 0
+  tags: [feature]
+  created: 2012-02-28T15:00:00Z
+  due: 2012-03-06T15:00:00Z
+  notes: []
+- !issue
+  id: 5
+  title: 'Consider an option that shuts down service when/if power is removed.  '
+  complete: false
+  priority: 0
+  tags: [feature]
+  created: 2012-03-03T15:00:00Z
+  due: 2012-03-10T15:00:00Z
+  notes: []
+- !issue
+  id: 6
+  title: Does not work with WMP
+  complete: true
+  priority: 0
+  tags: [bug]
+  created: 2012-03-03T15:00:00Z
+  due: 2012-03-10T15:00:00Z
+  notes:
+  - |
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getCurrentInstanceIds
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getMediaInfo
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getTransportInfo: returning stopped
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getTransportSettings
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getPositionInfo()
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getDeviceCapabilities
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getCurrentTransportActions
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getCurrentTransportActions: STOP_STATE_TRANSPORT_ACTIONS
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getCurrentInstanceIds
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getCurrentChannels
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getMute: Master
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getVolume Master
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getVolume: 73, max: 15
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getCurrentInstanceIds
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getMediaInfo
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getTransportInfo: returning stopped
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getTransportSettings
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getPositionInfo()
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getDeviceCapabilities
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getCurrentTransportActions
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getCurrentTransportActions: STOP_STATE_TRANSPORT_ACTIONS
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getCurrentInstanceIds
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getCurrentChannels
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getMute: Master
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getVolume Master
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getVolume: 73, max: 15
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.stop
+    I/com.abk.privatedancer(22639): Ignoring stop from client, currently not in play state.
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getVolume Master
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getVolume: 73, max: 15
+    D/com.abk.privatedancer(22639): AndroidAudioRenderingControlService.getMute: Master
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getTransportInfo: returning stopped
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getTransportInfo: returning stopped
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.getTransportInfo: returning stopped
+    I/com.abk.privatedancer(22639): AndroidAVTransportService.stop
+    I/com.abk.privatedancer(22639): Ignoring stop from client, currently not in play state.
+- !issue
+  id: 7
+  title: PD being shutdown/crash/killed for unknown reason
+  complete: false
+  priority: 0
+  tags: ['']
+  created: 2012-03-22T15:00:00Z
+  due: 2012-03-29T15:00:00Z
+  notes:
+  - "I/EventLogService(  234): Aggregate from 1332461848681 (log), 1332461848681 (data)\n\
+    W/System.err(  134): java.lang.Throwable: stack dump\nW/System.err(  134): \t\
+    at java.lang.Thread.dumpStack(Thread.java:496)\nW/System.err(  134): \tat android.os.Process.killProcessQuiet(Process.java:750)\n\
+    W/System.err(  134): \tat com.android.server.am.ActivityManagerService.updateOomAdjLocked(ActivityManagerService.java:14389)\n\
+    W/System.err(  134): \tat com.android.server.am.ActivityManagerService.updateOomAdjLocked(ActivityManagerService.java:14335)\n\
+    W/System.err(  134): \tat com.android.server.am.ActivityManagerService.serviceDoneExecutingLocked(ActivityManagerService.java:11697)\n\
+    W/System.err(  134): \tat com.android.server.am.ActivityManagerService.serviceDoneExecuting(ActivityManagerService.java:11667)\n\
+    W/System.err(  134): \tat android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:723)\n\
+    W/System.err(  134): \tat com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:1545)\n\
+    W/System.err(  134): \tat android.os.Binder.execTransact(Binder.java:338)\nW/System.err(\
+    \  134): \tat dalvik.system.NativeStart.run(Native Method)\nI/ActivityManager(\
+    \  134): No longer want com.abk.privatedancer (pid 478): hidden #16\nE/WifiService(\
+    \  134): Multicaster binderDied\nW/ActivityManager(  134): Scheduling restart\
+    \ of crashed service com.abk.privatedancer/.PrivateDancerUpnpServiceImpl in 5000ms\n"

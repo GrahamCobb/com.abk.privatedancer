@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Private Dancer</string>
+    <!-- Preferences -->
+    <string name="enable_service_checkbox_title">Accept Connections</string>
+    <string name="enable_service_checkbox_summary">Enables the UPNP/DLNA Media Renderer to accept connections from other devices.</string>
+    <string name="enable_service_key">enable_service_key</string>
+    <string name="enable_service_default_value">true</string>
+    
+    <string name="start_service_on_boot_key">start_service_on_boot_key</string>
+    <string name="start_service_on_boot_summary">Automatically start Private Dancer on boot.</string>
+    <string name="start_service_on_boot_title">Start on Boot</string>
+    
+    <string name="clients_set_volume_key">clients_set_volume_key</string>
+    <string name="clients_set_volume_summary">Allow clients to adjust the player volume.</string>
+    <string name="clients_set_volume_title">Enable Volume Control</string>
+    
+    <string name="client_whitelist_key">client_whitelist_key</string>
+    <string name="client_whitelist_summary">Only allow specific clients to play content.</string>
+    <string name="client_whitelist_title">Enable Whitelist</string>
+    
+    <string name="show_playing_media_text_key">show_playing_media_text_key</string>
+    <string name="show_playing_media_text_summary">Show track, album, and artist information.</string>
+    <string name="show_playing_media_text_title">Show Album</string>
+    
+    <string name="show_playing_media_artwork_key">show_playing_media_artwork_key</string>
+    <string name="show_playing_media_artwork_summary">Show album artwork.</string>
+    <string name="show_playing_media_artwork_title">Show Artwork</string>
+    
+    <string name="show_playing_media_artwork_external_key">show_playing_media_artwork_external_key</string>
+    <string name="show_playing_media_artwork_external_summary">Attempt to download artwork if not provided by client.</string>
+    <string name="show_playing_media_artwork_external_title">Download Artwork</string>
+    
+    <string name="prevent_sleep_key">prevent_sleep_key</string>
+    <string name="prevent_sleep_summary">Prevent device from sleeping when service is active.</string>
+    <string name="prevent_sleep_title">Always On</string>
+    
+    <string name="player_name_key">player_name_key</string>
+    <string name="player_name_summary">Set the name for the service on the network.</string>
+    <string name="player_name_title">Network Name</string>
+        
+       
+    <!-- Android Notification -->
+    <string name="notification_started_message">Private Dancer has started.</string>
+    <string name="notification_started_title">Private Dancer active</string>
+    <string name="notification_started_action_text">Select to view preferences.</string>
+    <!-- UPNP metadata -->
+    <string name="upnp_system_identifier">private_dancer_v1</string>
+    
+    <string name="uda_device_friendlyname">Private Dancer</string>
+    <string name="uda_manufacturer_name">Apps by Ken</string>
+    <string name="uda_manufacturer_url">http://appsbyken.com</string>
+    <string name="uda_model_name">com.abk.privatedancer</string>
+    <string name="uda_model_description">Background UPNP/DLNA MediaRenderer for Android.</string>
+    <string name="uda_model_url">http://appsbyken.com</string>
+    
+</resources>

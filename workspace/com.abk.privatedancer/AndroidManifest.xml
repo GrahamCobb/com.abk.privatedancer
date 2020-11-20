@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abk.privatedancer"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk android:minSdkVersion="8" />
+    <supports-screens android:largeScreens="true"
+                    android:normalScreens="true"
+                    android:smallScreens="true" android:anyDensity="true" android:resizeable="true"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" android:hasCode="true">
+        <receiver
+            android:name="BootCompletedBroadcastReceiver"
+            android:enabled="true"
+            android:label="Private Dancer Boot Completed Receiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl" />
+        <service
+            android:name="PrivateDancerUpnpServiceImpl"
+            android:label="Private Dancer UPNP Service" >
+        </service>
+
+        <activity
+            android:name=".prefs.PrivateDancerPreferenceActivity"
+            android:launchMode="singleInstance" android:screenOrientation="unspecified">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

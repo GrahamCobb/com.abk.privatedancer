@@ -1,0 +1,19 @@
+Private Dancer is a UPnP/DLNA Media Renderer for Android.  It is designed to be used on a device attached to speakers and power.  Unlike other UPnP Android applications, Private Dancer is designed for always-on (headless) use.  It contains no flashy UI and its only purpose is to provide a rock-solid, dependable wireless audio service for your home network.
+
+What is a UPnP/DLNA Media Renderer?
+The name is awkward but Private Dancer essentially provides wireless speakers for your network.  It relies on the UPnP* protocol to communicate with other devices on the network.  Many devices support this protocol and there are many Android apps available that can be used to send audio to Private Dancer.
+
+What is meant by 'headless'?
+While Private Dancer can be used on any Android device, it sports features that make it ideal for a tablet or unused Android phone that can be connected to speakers and power.  The service can run on boot and aims to be always available, and generally once setup does not require direct user interaction.
+
+How does it work?
+Install the application and run it.  Select startup options and enable the service.  Once enabled, a notification appears and the UPnP/DLNA service is available on the network.  Connect to the service via a supported UPnP client, such as Samsung's AllShare media application to play music from your phone or other UPnP device.
+
+Feature List
+-UPnP/DLNA Media Renderer
+-Configurable to start automatically on boot (survives loss of power)
+-Configurable to prevent device from entering sleep mode (always on)
+-Configurable to allow or prevent clients from changing the volume
+-Configurable the name of the service
+
+* Private Dancer uses the excellent Cling library for UPnP protocol support.  Cling is LGPL licensed, and more information is available at http://teleal.org/projects/cling.

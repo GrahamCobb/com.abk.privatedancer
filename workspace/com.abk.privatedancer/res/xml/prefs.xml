@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Service" >
+        <CheckBoxPreference
+            android:defaultValue="@string/enable_service_default_value"
+            android:enabled="true"
+            android:key="@string/enable_service_key"
+            android:selectable="true"
+            android:summary="@string/enable_service_checkbox_summary"
+            android:title="@string/enable_service_checkbox_title" 
+            android:disableDependentsState="true" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="@string/start_service_on_boot_key"
+            android:selectable="true"
+            android:summary="@string/start_service_on_boot_summary"
+            android:title="@string/start_service_on_boot_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="@string/prevent_sleep_key"
+            android:selectable="true"
+            android:summary="@string/prevent_sleep_summary"
+            android:title="@string/prevent_sleep_title"
+            android:dependency="@string/enable_service_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Player" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="@string/clients_set_volume_key"
+            android:selectable="true"
+            android:summary="@string/clients_set_volume_summary"
+            android:title="@string/clients_set_volume_title"
+            android:dependency="@string/enable_service_key" />
+        <!-- 
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="@string/client_whitelist_key"
+            android:selectable="false"
+            android:summary="@string/client_whitelist_summary"
+            android:title="@string/client_whitelist_title" />
+ 		-->
+        <EditTextPreference
+            android:defaultValue="@string/app_name"
+            android:enabled="true"
+            android:key="@string/player_name_key"
+            android:selectable="true"
+            android:summary="@string/player_name_summary"
+            android:title="@string/player_name_title" 
+            android:dependency="@string/enable_service_key" />        
+    </PreferenceCategory>
+    <!-- 
+    <PreferenceCategory android:title="Media" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="@string/show_playing_media_text_key"
+            android:selectable="false"
+            android:summary="@string/show_playing_media_text_summary"
+            android:title="@string/show_playing_media_text_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="@string/show_playing_media_artwork_key"
+            android:selectable="false"
+            android:summary="@string/show_playing_media_artwork_summary"
+            android:title="@string/show_playing_media_artwork_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="@string/show_playing_media_artwork_external_key"
+            android:selectable="false"
+            android:summary="@string/show_playing_media_artwork_external_summary"
+            android:title="@string/show_playing_media_artwork_external_title" />
+    </PreferenceCategory>
+ 	-->
+</PreferenceScreen>
